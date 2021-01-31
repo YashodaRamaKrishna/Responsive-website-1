@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Yusei Magic', sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 20px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(26, 26, 26);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 150, 112,0.8);
+  }
+body{
+    height: auto;
+    width: 100vw;
+    background-color: #131516;
+}
+
+
+/* First page styles */
+    .home{
+        height: auto;
+        width: 100%;
+        background-color: rgb(0, 150, 112);
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+                
+        nav{
+            position: fixed;
+            display: flex;
+            background-color: rgb(0, 150, 112);
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5em 1em 0.5em 1em;
+            font-size: 1.5em;
+        }
+        nav ul{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background-color: black;
+            height: 100%;
+            width: 70%;
+            padding: 2em 1em 1em 1.5em;
+            list-style-type: none;
+            display: none;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin-top: 0.7em;
+            /* background-color: white; */
+            padding: 0px;
+        }
+        .close{
+            position: absolute;
+            right: 1.5em;
+            top: 0.5em;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        /* #itis{display: none;} */
+        #check:checked + ul{
+            display: flex;
+        }
+        #check{
+            display: none;
+        }
+        
+        .introduction{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            padding: 1em 0.2em 0.5em 0.2em;
+            text-align: center;
+            margin-top: 2em;
+        }
+        .introduction h2{
+            margin-bottom: 0.3em;
+        }
+
+        .fa-bars:hover, .fa-close:hover{
+            cursor: pointer;
+        }
+
+    
+    
+    
+        .features{
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .features .top_feat, .features .btm_feat{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+        }
+        .features .btm_feat{
+            background-color: #121314;
+        }
+        .underline, .underline2, .underline3, .underline4, .underline5, .underline6{
+            height: 2px;
+            background-color: rgb(0, 150, 112);
+            width: 140px;
+            margin-bottom: 0.5em;
+        }
+        .underline2{
+            width: 120px; 
+        }
+        .underline3{
+            width: 210px;
+        }
+        .underline4{
+            width: 180px;
+        }
+        .underline5{
+            width: 150px;
+            margin-bottom: 2em;
+        }
+        .underline6{
+            width: 170px;
+        }
+        .feat_boxes{
+            width: 90%;
+            height: auto;
+            display: flex;
+            margin-top: 1em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 95%;
+            height: auto;
+            padding: 0.7em 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1em;
+            background-color: #161819;
+        }
+        .feat_boxes .box i{
+            font-size: 2em;
+        }
+        .feat_boxes .box h4{
+            margin: 0.3em 0em 0.5em 0em;
+        }
+
+        .install{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 0.7em;
+        }
+        .install .install_text{
+            width: 75%;
+        }
+        .install .fa{
+            color: #131516;
+            background: rgb(0, 150, 112);
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            width: 60px;
+            border-radius: 50%;
+            text-decoration: none;
+            /* margi5px 2px; */
+        }
+        .responsive{
+            width: 100%;
+            height: auto;
+        }
+
+
+
+/* SERVICES PAGE STARTS */
+
+.services{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+}
+.service_box{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    text-align: center;
+
+}
+.service_boxes{
+    margin: 0.5em 0em 0.5em 0em;
+}
+.service_box span{
+    margin: 0.5em 0em 0.5em 0em;
+}
+.service_box .fa{
+    font-size: 1.9em;
+}
+.service_box:nth-child(2n){
+    background-color: #161819;
+}
+
+
+.callToAction, .testimonial{
+    padding: 1.5em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+
+
+.tables{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.priceTable{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+}
+.priceTemp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5em;
+}
+.priceTemp div{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+    background-color: #191919;
+    font-size: 1.2em;
+    border-bottom: 0.5px solid #4e4e4e;
+}
+.priceTemp div:nth-child(1), .priceTemp div:nth-child(2), .priceTemp div:nth-last-child(1){
+    border: none;
+}
+.level{
+    display: inline-block;
+    margin-top: 0.5em;
+    font-size: 1.3em;
+}
+.amount{
+    font-size: 2em;
+}
+.signUp{
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 150, 112);
+    color: white;
+}
+.signUp:hover{
+    cursor: pointer;
+}
+
+.aboutUs{
+    padding: 1.5em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.abouts{
+    width: 100%;
+}
+.aboutUs .abouts .box{
+    width: 100%;
+    height: auto;
+    padding: 0.7em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #161819;
+}
+.person{
+    margin: 0.7em;
+    font-size: 1.3em;
+}
+.person_img{
+    width: 100%;
+    height: auto;
+}
+
+
+.container{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1em;
+    background-color: rgb(23 23 23);
+    padding: 1.5em 0em 1.5em 0em;
+}
+.footer-social{
+    font-size: 1.5em;
+}
+.footer-copyright{
+    font-size: 0.7em
+}
+.footer-social a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        height: auto;
+        width: 100%;
+        font-size: 18px;
+        background-color: #131516;
+    }
+    .introduction{
+        /* font-size: 1.5em; */
+        padding: 1.5em 4em 2em 4em;
+    }
+    .introduction h2{
+        margin-bottom: 0.3em;
+    }
+
+    .feat_boxes{
+        justify-content: space-between;
+        flex-direction: row;
+    }    
+    .feat_boxes .box{
+        width: 24%;
+        transition: 0.2s linear;
+    }
+    .feat_boxes .box:hover{
+        margin-top: -1.5em;
+    }
+    .features .btm_feat{
+        flex-direction: row;
+    }
+    .responsive{
+        width: 100%;
+        height: auto;
+    }
+    .responsive img{
+        width: 100%;
+        height: auto;
+    }
+    .service_boxes{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .service_box{
+        width: 33.3%;
+    }
+    .callToAction, .testimonial{
+        padding: 4em;
+    }
+    .tables{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .priceTable{
+        padding: 3em;
+    }
+    .priceTemp{
+        width: 32%;
+    }
+    .abouts{
+        padding: 3em;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .aboutUs .abouts .box{
+        width: 28%;
+    }
+
+    nav ul{
+        width: 30%;
+    }
+  }
